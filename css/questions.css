@@ -1,0 +1,62 @@
+.sec__four{
+    margin-top: 20vh;
+    width: 100vw;
+    height: 90vh;
+}
+.ques__title{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ques__title h2{
+    font-family: raleway_c,sans-serif;
+    font-size: 2rem;
+}
+.ques__body{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.ques__cards{
+    width: 17.5%;
+    height: 50%;
+    border: 2px black solid;
+    border-radius: 20px;
+}
+.ques__card__title{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Bahnschrift,sans-serif;
+    font-weight: bold;
+}
+.ques__card__link{
+    width: 100%;
+    height: 30%;
+    text-align: center;
+}
+.ques__card__link a{
+    text-decoration: none;
+    color: black;
+    font-family: raleway_c,sans-serif;
+}
+.ques__footer{
+    width: 100%;
+    height: 10%;
+    text-align: center;
+}
+.ques__footer a{
+    color: black;
+    font-family: raleway_c,sans-serif;
+    transform: translate(50%,50%);
+    text-decoration: none;
+    border: 1px black solid;
+    padding: 0.5% 2.5%;
+}
