@@ -1,16 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Главная страница</title>
-    <link rel="stylesheet" href="css/fonts.css">
-    <link rel="stylesheet" href="css/null.css">
+    <link rel="stylesheet" href="css/default/fonts.css">
+    <link rel="stylesheet" href="css/default/null.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/city.css">
     <link rel="stylesheet" href="css/news.css">
     <link rel="stylesheet" href="css/advice.css">
     <link rel="stylesheet" href="css/questions.css">
+    <link rel="stylesheet" href="css/subscribe.css">
+    <link rel="stylesheet" href="css/research.css">
 </head>
 <body>
     <header>
@@ -31,109 +33,162 @@
             </div>
         </div>
     </header>
-    <section class="sec__one">
-        <div class="one__title _anim-items _anim-no-hide">
-            <h2>Что-то про города</h2>
+    <section class="subscribe">
+        <div class="subscribe__birds">
+            <img src="images/birds.png" alt="">
         </div>
-        <div class="one__body">
-            <div class="city__1 cities _anim-items _anim-no-hide">
-                <div class="city__img"><img src="images/cities/dubai.png" alt=""></div>
-                <div class="city__content">
-                    <div class="city__title"><h2>Город №1</h2></div>
-                    <div class="city__body"><p>Описание города №1</p></div>
-                </div>
+        <div class="subscribe__block">
+            <div class="subscribe__text">
+                <h4>
+                    Получайте эксклюзивные предложения,
+                    вдохновляющие истории и обновления
+                    правил путешествий.
+                </h4>
+                <p>
+                    Станьте подписчиком* и получайте
+                    отличные советы по планированию
+                    путешествий на свой почтовый ящик!
+                </p>
             </div>
-            <div class="city__2 cities _anim-items _anim-no-hide">
-                <div class="city__img"><img src="images/cities/moscow.png" alt=""></div>
-                <div class="city__content">
-                    <div class="city__title"><h2>Город №2</h2></div>
-                    <div class="city__body"><p>Описание города №2</p></div>
+            <form action="" class="subscribe__form">
+                <label for="email">
+                    <input type="email" name="email" id="email" placeholder="Введите почту" required>
+                </label>
+                <div>
+                    <p>
+                        Регистрируясь, вы соглашаетесь с нашими
+                        <a href="">Условиями обслуживания</a> и <a href="">Политикой конфиденциальности</a>.
+                    </p>
+                    <button class="button-29" type="submit">Подписаться</button>
                 </div>
-            </div>
-            <div class="city__3 cities _anim-items _anim-no-hide">
-                <div class="city__img"><img src="images/cities/london.png" alt=""></div>
-                <div class="city__content">
-                    <div class="city__title"><h2>Город №3</h2></div>
-                    <div class="city__body"><p>Описание города №3</p></div>
-                </div>
-            </div>
-            <div class="city__4 cities _anim-items _anim-no-hide">
-                <div class="city__img"><img src="images/cities/rome.png" alt=""></div>
-                <div class="city__content">
-                    <div class="city__title"><h2>Город №4</h2></div>
-                    <div class="city__body"><p>Описание города №4</p></div>
-                </div>
-            </div>
-        </div>
-        <div class="one__footer">
-            <a class="about__city_link" href="#">
-                <span>Узнать больше</span>
-                <div class="left_hover"></div>
-                <div class="right_hover"></div>
-            </a>
+            </form>
         </div>
     </section>
-    <section class="sec__two">
-        <div class="news__title">
-            <h2>Новости</h2>
+    <section class="research">
+        <div class="research__back">
+            <figure class="research-img-one">
+                <img src="images/for-index-page/01.png" alt="">
+            </figure>
+            <figure class="research-img-two">
+                <img src="images/for-index-page/compass.png" alt="">
+            </figure>
+            <div class="research-title-one">
+                <h1>ИССЛЕДУЙ</h1>
+            </div>
+            <div class="research-title-two">
+                <h1>БОЛЬШЕ</h1>
+            </div>
         </div>
-        <div class="news__body">
-            <div class="left__side">
-                <div class="card__image">
-                    <img src="images/news/pexels-emily-geibel-3772272%201.png" alt="">
+        <div class="research__front">
+            <div class="research__body">
+                <div class="city__1 cities _anim-items _anim-no-hide">
+                    <div class="city__img"><img src="images/cities/dubai.png" alt=""></div>
+                    <div class="city__content">
+                        <div class="city__title"><h2>Город №1</h2></div>
+                        <div class="city__body"><p>Описание города №1</p></div>
+                    </div>
                 </div>
-                <div class="card__body">
-                    <div class="card__title"><h2>Header</h2></div>
-                    <div class="card__text">
-                        <p>
-                            Всем привет, пытаюсь уже 10 раз установить
-                            русификатор, но так и не понял как это сделать.
-                            Возможно он сейчас не работает, либо я неправильно его установил.
-                            Делал так: скачал архив, разархивировал, перед этим удалил старую версию,
-                            запустил новую версию, указал путь к папке с игрой(steam версия),
-                            проверил на наличие новых обновлений, загрузил перевод с сервера,
-                            подождал и нажал на установить, галочку с "Всего, кроме диалогов" убрал,
-                            затем запустил лаунчер SWTOR. Но в игре все равно только английский язык.
-                            Я вышел из игры, не стал сразу всё переустанавливать заново , перепроверил
-                            всё еще раз на наличие новых обновлений, русификатор написал, что нету.
-                            Вижу что кнопка "Переустановить" обведена синей обводкой  ну и нажал на нее.
-                            Через несколько секунд выходит командная строка, а за ней открывается
-                            браузер Firefox и начинает переводить автоматически тексты из игры,
-                            но она очень долго длиться. Как быть, никто с такой проблемой не
-                            сталкивался ? Буду очень рад, если подскажите, как это решить.
-                            К сожалению первый раз столкнулся с такой проблемой.
-                        </p>
+                <div class="city__2 cities _anim-items _anim-no-hide">
+                    <div class="city__img"><img src="images/cities/moscow.png" alt=""></div>
+                    <div class="city__content">
+                        <div class="city__title"><h2>Город №2</h2></div>
+                        <div class="city__body"><p>Описание города №2</p></div>
+                    </div>
+                </div>
+                <div class="city__3 cities _anim-items _anim-no-hide">
+                    <div class="city__img"><img src="images/cities/london.png" alt=""></div>
+                    <div class="city__content">
+                        <div class="city__title"><h2>Город №3</h2></div>
+                        <div class="city__body"><p>Описание города №3</p></div>
+                    </div>
+                </div>
+                <div class="city__4 cities _anim-items _anim-no-hide">
+                    <div class="city__img"><img src="images/cities/rome.png" alt=""></div>
+                    <div class="city__content">
+                        <div class="city__title"><h2>Город №4</h2></div>
+                        <div class="city__body"><p>Описание города №4</p></div>
                     </div>
                 </div>
             </div>
-            <div class="right__side">
-                <ul class="cards__list">
-                    <li class="card__1 cards" onclick="setCard(this)">
-                        <div class="cards__image">
-                            <img src="images/news/pexels-markus-winkler-2975021%201.png" alt="">
+            <div class="research__footer">
+                <a class="research-btn" href="#">
+                    <span>Узнать больше</span>
+                    <div class="left_hover"></div>
+                    <div class="right_hover"></div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="sec__two">
+        <div class="news__back">
+            <figure class="news__back__one">
+                <img src="images/for-index-page/02.png" alt="">
+            </figure>
+            <h1 class="news__back__title__one">УЗНАЙ</h1>
+            <h1 class="news__back__title__two">БОЛЬШЕ</h1>
+        </div>
+        <div class="news__front">
+            <div class="news__title">
+                <h2>Новости</h2>
+            </div>
+            <div class="news__body">
+                <div class="left__side">
+                    <div class="card__image">
+                        <img src="images/news/pexels-emily-geibel-3772272%201.png" alt="">
+                    </div>
+                    <div class="card__body">
+                        <div class="card__title"><h2>Header</h2></div>
+                        <div class="card__text">
+                            <p>
+                                Всем привет, пытаюсь уже 10 раз установить
+                                русификатор, но так и не понял как это сделать.
+                                Возможно он сейчас не работает, либо я неправильно его установил.
+                                Делал так: скачал архив, разархивировал, перед этим удалил старую версию,
+                                запустил новую версию, указал путь к папке с игрой(steam версия),
+                                проверил на наличие новых обновлений, загрузил перевод с сервера,
+                                подождал и нажал на установить, галочку с "Всего, кроме диалогов" убрал,
+                                затем запустил лаунчер SWTOR. Но в игре все равно только английский язык.
+                                Я вышел из игры, не стал сразу всё переустанавливать заново , перепроверил
+                                всё еще раз на наличие новых обновлений, русификатор написал, что нету.
+                                Вижу что кнопка "Переустановить" обведена синей обводкой  ну и нажал на нее.
+                                Через несколько секунд выходит командная строка, а за ней открывается
+                                браузер Firefox и начинает переводить автоматически тексты из игры,
+                                но она очень долго длиться. Как быть, никто с такой проблемой не
+                                сталкивался ? Буду очень рад, если подскажите, как это решить.
+                                К сожалению первый раз столкнулся с такой проблемой.
+                            </p>
                         </div>
-                        <div class="cards__title"><h2>Header 1</h2></div>
-                        <div class="cards__text">
-                            <p>Text 1</p>
-                        </div>
-                    </li>
-                    <li class="card__2 cards" onclick="setCard(this)">
-                        <div class="cards__image">
-                            <img src="images/news/pexels-pixabay-208360%201.png" alt="">
-                        </div>
-                        <div class="cards__title"><h2>Header 2</h2></div>                        <div class="cards__text">
+                    </div>
+                </div>
+                <div class="right__side">
+                    <ul class="cards__list">
+                        <li class="card__1 cards" onclick="setCard(this)">
+                            <div class="cards__image">
+                                <img src="images/news/pexels-markus-winkler-2975021%201.png" alt="">
+                            </div>
+                            <div class="cards__title"><h2>Header 1</h2></div>
+                            <div class="cards__text">
+                                <p>Text 1</p>
+                            </div>
+                        </li>
+                        <li class="card__2 cards" onclick="setCard(this)">
+                            <div class="cards__image">
+                                <img src="images/news/pexels-pixabay-208360%201.png" alt="">
+                            </div>
+                            <div class="cards__title"><h2>Header 2</h2></div>                        <div class="cards__text">
                             <p>Text 2</p>
                         </div>
-                    </li>
-                    <li class="card__3 cards" onclick="setCard(this)">
-                        <div class="cards__image">
-                            <img src="images/news/pexels-markus-winkler-2975021%201.png" alt="">
-                        </div>
-                        <div class="cards__title"><h2>Header 3</h2></div>                        <div class="cards__text">
+                        </li>
+                        <li class="card__3 cards" onclick="setCard(this)">
+                            <div class="cards__image">
+                                <img src="images/news/pexels-markus-winkler-2975021%201.png" alt="">
+                            </div>
+                            <div class="cards__title"><h2>Header 3</h2></div>                        <div class="cards__text">
                             <p>Text 3</p>
                         </div>
-                    </li>
-                </ul>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
@@ -142,7 +197,7 @@
             <h2>Советы для туристов</h2>
         </div>
         <div class="three__body">
-            <div class="left__btn">
+            <div class="left__btn" id="btns" onclick="slideRight()">
                 <img src="images/icons/Arrow.svg" alt="">
             </div>
             <div class="advice__window">
@@ -213,9 +268,42 @@
                             <a href="">Подробнее</a>
                         </div>
                     </li>
+                    <li class="advice__item">
+                        <div class="advice__img">
+                            <img src="images/advices/kids.png" alt="">
+                        </div>
+                        <div class="advice__title">
+                            <p>Куда сходить с детьми в Сочи?</p>
+                        </div>
+                        <div class="advice__btn">
+                            <a href="">Подробнее</a>
+                        </div>
+                    </li>
+                    <li class="advice__item">
+                        <div class="advice__img">
+                            <img src="images/advices/backpack.png" alt="">
+                        </div>
+                        <div class="advice__title">
+                            <p>Что делать туристам в случае утери багажа?</p>
+                        </div>
+                        <div class="advice__btn">
+                            <a href="">Подробнее</a>
+                        </div>
+                    </li>
+                    <li class="advice__item">
+                        <div class="advice__img">
+                            <img src="images/advices/kids.png" alt="">
+                        </div>
+                        <div class="advice__title">
+                            <p>Куда сходить с детьми в Сочи?</p>
+                        </div>
+                        <div class="advice__btn">
+                            <a href="">Подробнее</a>
+                        </div>
+                    </li>
                 </ul>
             </div>
-            <div class="right__btn">
+            <div class="right__btn" id="btns" onclick="slideLeft()">
                 <img src="images/icons/Arrow.svg" alt="">
             </div>
         </div>
@@ -224,6 +312,7 @@
         </div>
     </section>
     <section class="sec__four">
+        <div class="ques__back"></div>
         <div class="ques__title">
             <h2>Часто задаваемые вопросы</h2>
         </div>
@@ -288,11 +377,9 @@
 
         </div>
     </footer>
-
-
-
     <script src="js/anim_on_scroll.js"></script>
     <script src="js/news.js"></script>
-    <script src="js/advice.js"></script>
+    <script src="js/card-slider.js"></script>
+<!--    <script src="js/advice.js"></script>-->
 </body>
 </html>

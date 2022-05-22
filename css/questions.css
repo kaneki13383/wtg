@@ -1,7 +1,26 @@
 .sec__four{
     margin-top: 20vh;
     width: 100vw;
-    height: 90vh;
+    height: 100vh;
+    background-image: url("../images/for-index-page/for-ques-block.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.ques__back{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+.ques__title, .ques__body, .ques__footer{
+    position: relative;
+    z-index: 2;
 }
 .ques__title{
     width: 100%;
@@ -9,6 +28,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    color: white;
 }
 .ques__title h2{
     font-family: raleway_c,sans-serif;
@@ -21,6 +41,7 @@
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+    color: white;
 }
 .ques__cards{
     width: 17.5%;
@@ -44,7 +65,7 @@
 }
 .ques__card__link a{
     text-decoration: none;
-    color: black;
+    color: white;
     font-family: raleway_c,sans-serif;
 }
 .ques__footer{
@@ -53,7 +74,7 @@
     text-align: center;
 }
 .ques__footer a{
-    color: black;
+    color: white;
     font-family: raleway_c,sans-serif;
     transform: translate(50%,50%);
     text-decoration: none;

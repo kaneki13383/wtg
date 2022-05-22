@@ -1,5 +1,4 @@
 .sec__three{
-    margin-top: 25%;
     width: 100%;
     height: 100vh;
     display: flex;
@@ -23,7 +22,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
+    /*gap: 1rem;*/
 }
 .left__btn{
     width: 10%;
@@ -60,6 +59,7 @@
 }
 .advice__window{
     width: 60%;
+    max-width: 2500px;
     height: 50%;
     overflow: hidden;
 }
@@ -70,13 +70,13 @@
     display: flex;
     align-items: center;
     justify-content: start;
-    gap: 1rem;
     flex-direction: row;
     transition: all 0.4s ease-in-out;
 }
 .advice__item{
     min-width: 31.8%;
     height: 100%;
+    margin-left: 1.5%;
     display: flex;
     flex-direction: column;
     position: relative;
