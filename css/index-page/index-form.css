@@ -1,0 +1,137 @@
+.sec__five{
+    width: 100%;
+    height: 110vh;
+    position: relative;
+}
+.five__top{
+    width: 100%;
+    height: 40%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.five__top h1{
+    font-family: raleway_c, sans-serif;
+    font-size: 3rem;
+}
+.five__top img{
+    position: absolute;
+    right: 0;
+    bottom: -20%;
+    width: 75%;
+    height: 100%;
+    object-fit: fill;
+    z-index: 1;
+}
+.five__bottom{
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: 60%;
+    background-image: url("../../images/for-index-page/david-marcu-78A265wPiO4-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.five__form{
+    width: 100%;
+    height: 100%;
+}
+.form__body{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 50%;
+}
+.form__body > div{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    justify-content: center;align-items: center;
+}
+.form__body > div > div{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.form__body > div > textarea{
+    width: 90%;
+    height: 90%;
+    border-radius: 10px;
+    background: transparent;
+    font-family: "Roboto Light",sans-serif;
+    color: white;
+    border: 1px white solid;
+    padding: 2.5%;
+    font-size: 1rem;
+    outline: none;
+}
+.form__body textarea::placeholder{
+    color: white;
+}
+.form__body input[type='text']{
+    width: 60%;
+    padding: 10px;
+    margin-left: 12.5px;
+    border: 1px white solid;
+    border-radius: 10px;
+    background: transparent;
+    outline: none;
+    color: white;
+}
+.form__body input[type='text']::placeholder{
+    color: white;
+}
+.form__body label{
+    font-family: raleway_c, sans-serif;
+    font-size: 1rem;
+    color: white;
+    margin-right: 25px;
+    text-align: center;
+}
+
+.form__body input[type='email']{
+    width: 60%;
+    padding: 10px;
+    border: 1px white solid;
+    border-radius: 10px;
+    background: transparent;
+    outline: none;
+    color: white;
+}
+.form__body input[type='email']::placeholder{
+    color: white;
+}
+.form__footer{
+    width: 100%;
+    height: 50%;
+    font-family: raleway_c, sans-serif;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.form__footer button{
+    padding: .5% 2.5%;
+    border-radius: 10px;
+    background: transparent;
+    outline: none;
+    border: 1px white solid;
+    color: white;
+    font-family: raleway_c, sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.form__footer p{
+    margin-top: 2.5%;
+    width: 50%;
+    text-align: center;
+    color: white;
+}

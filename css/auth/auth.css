@@ -1,0 +1,68 @@
+.for-auth{
+    height: 100%;
+    width: 100%;
+    background-image: url("../../images/for-auth/bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.auth{
+    width: 50%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+}
+.auth__title{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: raleway_c, sans-serif;
+    font-size: 2rem;
+    font-weight: 100;
+    color: white;
+}
+.auth__body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.auth__body input[type='text'],
+input[type='password']{
+    width: 50%;
+    height: 7.5%;
+    padding: 2.5%;
+    border-radius: 15px;
+    background-color: rgba(227, 224, 224, 0.6);
+    color: white;
+    border: 1px white solid;
+}
+.auth__body input:focus{
+    border-color: white;
+    outline-color: white;
+}
+.auth__body button{
+    width: 50%;
+    height: 20%;
+    text-align: center;
+    border-radius: 15px;
+    outline-color: #fbceb5;
+    border-color: #fbceb5;
+    font-size: 1rem;
+    font-family: "Roboto Light", sans-serif;
+    background-color: rgba(251, 206, 181, 0.85);
+    color: white;
+}
+.auth__body a{
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    font-family: raleway_c, sans-serif;
+}

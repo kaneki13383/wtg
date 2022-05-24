@@ -1,6 +1,6 @@
 .sec__two{
     width: 100vw;
-    height: 140vh;
+    height: 150vh;
     position: relative;
 }
 .news__back{
@@ -62,7 +62,7 @@
 }
 .news__body{
     width: 60%;
-    height: 80%;
+    height: 70%;
     display: flex;
     flex-direction: row;
 }
@@ -189,4 +189,18 @@
 }
 .cards__text{
     display: none;
+}
+.news__footer{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;align-items: center;
+}
+.news__footer a{
+    text-decoration: none;
+    padding: .5% 1.5%;
+    background-color: black;
+    color: white;
+    font-family: raleway_c, sans-serif;
+    font-size: 1rem;
 }
