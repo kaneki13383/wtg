@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../css/default/fonts.css">
     <link rel="stylesheet" href="../css/about/about-sec-one.css">
     <link rel="stylesheet" href="../css/about/about-sec-two.css">
+    <link rel="stylesheet" href="../css/about/about-footer.css">
 </head>
 <body>
     <header>
@@ -16,10 +17,20 @@
             <figure class="header__logo">
                 <img src="" alt="">
             </figure>
-            <ul class="header__list _anim-items _anim-no-hide">
-                <li class="list__item"><a href="../index.html">Главная</a></li>
-                <li class="list__item"><a href="#">Что-то</a></li>
-                <li class="list__item"><a href="about.html">О нас</a></li>
+            <a href="#burger-menu" class="header__list__burger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </a>
+            <ul id="burger-menu" class="header__list _anim-items _anim-no-hide">
+                <a href="#" class="exit">
+                    <div></div>
+                    <div></div>
+                </a>
+                <li><a href="">Главная</a></li>
+                <li><a href="">Новости</a></li>
+                <li><a href="">Статьи</a></li>
+                <li><a href="auth.html">Войти/Регистр.</a></li>
             </ul>
         </nav>
         <div class="header__body">
@@ -30,12 +41,10 @@
                 <h1>О нас</h1>
             </div>
             <div class="header__back__continent"></div>
+            <a href="#sec-one" class="header__moblie"></a>
         </div>
     </header>
     <section class="sec-1" id="sec-one">
-        <a class="for-sec-one-up" href="#" onclick="toFirst()">
-            <img src="../images/icons/Arrow.svg" alt="">
-        </a>
         <div class="sec-one-img _anim-items _anim-no-hide">
             <img src="../images/for-about-page/for-sec-one.png" alt="">
         </div>
@@ -67,8 +76,8 @@
     </section>
     <section class="sec-2" id="sec-two">
         <div class="sec-2-item">
-            <div id="one-step" class="sec-2-card">
-                <div class="sec-2-divined"></div>
+            <div class="sec-2-card">
+                <div class="sec-2-divined _anim-items _anim-no-hide"></div>
                 <div class="sec-2__title">
                     <h5>Мы посвящены</h5>
                     <h5>2/3</h5>
@@ -82,16 +91,16 @@
                     </p>
                 </div>
             </div>
-            <div class="sec-2-img">
+            <div id="one-step" class="sec-2-img _anim-items _anim-no-hide">
                 <img src="../images/for-about-page/for-sec-two.png" alt="">
             </div>
         </div>
         <div class="sec-2-item">
-            <div class="sec-2-img">
+            <div id="two-step" class="sec-2-img _anim-items _anim-no-hide">
                 <img src="../images/for-about-page/for-sec-two-3.png" alt="">
             </div>
-            <div id="two-step" class="sec-2-card">
-                <div class="sec-2-divined"></div>
+            <div class="sec-2-card">
+                <div class="sec-2-divined _anim-items _anim-no-hide"></div>
                 <div class="sec-2__title">
                     <h5>Наша миссия</h5>
                     <h5>3/3</h5>
@@ -107,6 +116,48 @@
             </div>
         </div>
     </section>
+    <footer>
+        <div class="footer-one">
+            <h2>WTG</h2>
+            <p>Контакты: +7 902 942 78 11</p>
+            <p>Email: Dmitrii1976@mail.ru</p>
+        </div>
+        <div class="footer-two">
+            <p>Ссылки</p>
+            <ul>
+                <li>Главная</li>
+                <li>Новости</li>
+                <li>О нас</li>
+                <li>Туры</li>
+                <li>FAQ</li>
+                <li>Советы</li>
+            </ul>
+        </div>
+        <div class="footer-three">
+            <p>Ресурсы</p>
+            <ul>
+                <li>Контакты</li>
+                <li>Поддержка</li>
+            </ul>
+        </div>
+        <div class="footer-four">
+            <p>Партнеры</p>
+            <ul>
+                <li>GWPU</li>
+                <li>Second life</li>
+                <li>s7 airlines</li>
+                <li>Психика Александра</li>
+                <li>Нервы Антона</li>
+                <li>Эчпочмак corporation</li>
+            </ul>
+        </div>
+        <div class="footer-doc">
+            <a href="">Политика конфиденциальности</a>
+        </div>
+        <div class="footer-footer">
+            <p>© DaunSquad           2022 / все права защищены</p>
+        </div>
+    </footer>
     <script src="../js/anim_on_scroll.js"></script>
 </body>
 </html>
