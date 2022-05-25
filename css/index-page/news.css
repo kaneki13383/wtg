@@ -27,6 +27,12 @@
     font-size: 4rem;
     letter-spacing: 2rem;
     color: #ced4db;
+    transition: all 0.4s ease;
+    transform: translateX(50%);
+    appearance: none;
+}
+.news__back__title__one._active{
+    transform: translateX(0);
 }
 .news__back__title__two{
     position: absolute;
@@ -36,6 +42,12 @@
     font-size: 4rem;
     letter-spacing: 2rem;
     color: #ced4db;
+    transition: all 0.4s ease;
+    transform: translateX(-50%);
+    appearance: none;
+}
+.news__back__title__two._active{
+    transform: translateX(0);
 }
 .news__front{
     width: 100%;

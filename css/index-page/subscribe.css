@@ -5,6 +5,7 @@
     justify-content: center;
     align-items: center;
     position: relative;
+    background: white;
 }
 .subscribe__birds{
     position: absolute;
@@ -12,6 +13,11 @@
     left: 2.5%;
     width: 30%;
     height: 40%;
+    transition: all 0.4s ease-in-out;
+    transform: translateX(50%) translateY(50%);
+}
+.subscribe__birds._active{
+    transform: translateY(0) translateX(0);
 }
 .subscribe__birds img{
     width: 100%;
@@ -23,6 +29,7 @@
     height: 35%;
     background-image: url("../../images/for-subscribe.png");
     background-repeat: no-repeat;
+    background-size: cover;
     border-radius: 20px;
     background-position: center;
     position: relative;
@@ -31,13 +38,13 @@
     display: flex;
     flex-direction: row;
 }
-.subscribe__block::before{
+.sub__back{
     content: '';
     position: absolute;
+    width: 100%;
+    height: 100%;
     top: 0;
     left: 0;
-    right: 0;
-    bottom: 0;
     z-index: 3;
     background: rgba(0, 0, 0, 0.25);
     border-radius: 20px;
@@ -56,10 +63,11 @@
     margin: 0 5%;
 }
 .subscribe__text h4{
-    font-size: 1.25rem;
+    font-size: calc(12px + 8 * (100vw / 1280));
     font-family: "Roboto Light", sans-serif;
 }
 .subscribe__text p{
+    font-size: calc(12px + 4 * (100vw / 1280));
     font-family: raleway_c, sans-serif;
     margin-right: 15%;
 }
@@ -105,10 +113,12 @@
 .subscribe__form > div > p{
     margin: 0 7.5%;
     font-family: raleway_c, sans-serif;
+    font-size: calc(12px + 4 * (100vw / 1280));
 }
 .subscribe__form > div > p > a{
     text-decoration: #ececec underline;
     color: #ececec;
+    font-size: calc(12px + 4 * (100vw / 1280));
 }
 .subscribe__form > div > button{
     margin-right: 5%;
@@ -150,7 +160,6 @@
     box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #c3c7e7 0 -3px 0 inset;
     transform: translateY(-2px);
 }
-
 .button-29:active {
     box-shadow: #cccfe8 0 3px 7px inset;
     transform: translateY(2px);

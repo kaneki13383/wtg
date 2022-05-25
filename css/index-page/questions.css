@@ -1,11 +1,11 @@
 .sec__four{
-    margin-top: 20vh;
     width: 100vw;
     height: 100vh;
+    background-color: white;
     background-image: url("../../images/for-index-page/for-ques-block.png");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 75% 50%;
+    background-position: center;
     position: relative;
 }
 .ques__back{
@@ -62,6 +62,12 @@
     font-weight: bold;
     text-align: center;
 }
+.ques__card__title p{
+    font-family: raleway_c, sans-serif;
+    padding: 0 5%;
+    line-height: 1.5rem;
+    font-size: calc(12px + 16 * (100vw - 1280));
+}
 .ques__card__link{
     width: 100%;
     height: 30%;
@@ -71,6 +77,7 @@
     text-decoration: none;
     color: white;
     font-family: raleway_c,sans-serif;
+    font-size: calc(12px + 8 * (100vw - 1280));
 }
 .ques__footer{
     width: 100%;

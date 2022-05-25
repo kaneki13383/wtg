@@ -3,45 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Регистрация</title>
+    <title>Вход</title>
     <link rel="stylesheet" href="../css/default/fonts.css">
     <link rel="stylesheet" href="../css/default/null.css">
-    <link rel="stylesheet" href="../css/auth/registration.css">
     <link rel="stylesheet" href="../css/auth/auth.css">
 </head>
-<body style="overflow: hidden;">
-    <div class="for-registration" id="registration">
-        <div class="registration">
-            <div class="registration__title">
-                <h1>Регистрация</h1>
-            </div>
-            <form action="" class="registration__body">
-                <input required type="text" name="fullName" id="fullName" placeholder="Введите ФИО">
-                <input required type="email" name="email" id="email" placeholder="Введите почту">
-                <input required type="text" name="login" id="login" placeholder="Введите логин">
-                <input required type="password" name="pass-one" id="pass-one" placeholder="Введите пароль">
-                <input required type="password" name="pass-two" id="pass-two" placeholder="Введите пароль ещё раз">
-                <button type="submit">Войти</button>
-                <div>
-                    <div>
-                        <input type="checkbox" name="isPolicy" id="isPolicy">
-                        <label for="isPolicy">политика сайта</label>
-                    </div>
-                    <a href="#auth">Есть аккаунт?</a>
-                </div>
-            </form>
-        </div>
-    </div>
-    <div class="for-auth" id="auth">
+<body style="overflow: hidden; transition: none; background: black;">
+    <div class="for-auth">
         <div class="auth">
             <div class="auth__title">
-                <h1>Войти</h1>
+                <h1>Авторизация</h1>
             </div>
             <form action="" class="auth__body">
                 <input required type="text" name="login" id="login-auth" placeholder="Введите логин">
                 <input required type="password" name="pass-one" id="pass-auth" placeholder="Введите пароль">
                 <button type="submit">Войти</button>
-                <a href="#registration">Регистрация</a>
+                <a href="registration.html">Регистрация</a>
             </form>
         </div>
     </div>
