@@ -14,10 +14,19 @@
 <body>
     <header>
         <nav>
-            <div class="header__logo">
-                <img src="" alt="Logo">
-            </div>
-            <ul class="header__list _anim-items _anim-no-hide">
+            <figure class="header__logo">
+                <img src="" alt="">
+            </figure>
+            <a href="#burger-menu" class="header__list__burger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </a>
+            <ul id="burger-menu" class="header__list _anim-items _anim-no-hide">
+                <a href="#" class="exit">
+                    <div></div>
+                    <div></div>
+                </a>
                 <li><a href="">Главная</a></li>
                 <li><a href="">Новости</a></li>
                 <li><a href="">Статьи</a></li>
@@ -122,7 +131,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
+            <div class="row" >
                 <div id="left" class="main-card _anim-items">
                     <figure class="main-card-img">
                         <img src="../images/for-news/card-7.png" alt="">
