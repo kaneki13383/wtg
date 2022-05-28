@@ -522,12 +522,14 @@ body{
         flex-direction: column;
     }
     .header__title{
+        position: relative;
+        top: -5%;
         font-family: raleway_c, sans-serif;
-        font-size: 4rem;
+        font-size: 2rem;
     }
     .header__back__title{
         font-family: raleway_c, sans-serif;
-        font-size: 5rem;
+        font-size: 4rem;
         color: #ececec;
         position: relative;
         bottom: 40%;
@@ -544,9 +546,9 @@ body{
     }
     .header__back__continent{
         position: absolute;
-        top: 10%;
-        left: 5%;
-        width: 50%;
+        top: 12.5%;
+        left: 2.5%;
+        width: 30%;
         height: 100%;
         background-image: url("../../images/for-about-page/continens/pngwing 1.png");
         background-repeat: no-repeat;

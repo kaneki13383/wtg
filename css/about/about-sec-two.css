@@ -213,11 +213,11 @@
 @media screen and (min-width: 427px) and (max-width: 1365px){
     .sec-2{
         width: 90%;
-        height: 50vh;
+        height: 550px;
         display: flex;
         margin: 0 5%;
         flex-direction: column;
-        gap: 10rem;
+        gap: 50px;
         position: relative
     }
     .sec-2::before{
@@ -319,7 +319,7 @@
 @media screen and (max-width: 426px){
     .sec-2{
         width: 90%;
-        height: 125vh;
+        height: 875px;
         display: flex;
         margin: 0 5%;
         flex-direction: column;

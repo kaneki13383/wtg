@@ -19,12 +19,21 @@
 <body style="background: black">
     <header>
         <nav>
-            <div class="header__logo">
-                <img src="" alt="Logo">
-            </div>
-            <ul class="header__list _anim-items _anim-no-hide">
-                <li><a href="">Главная</a></li>
-                <li><a href="">Новости</a></li>
+            <figure class="header__logo">
+                <img src="" alt="">
+            </figure>
+            <a href="#burger-menu" class="header__list__burger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </a>
+            <ul id="burger-menu" class="header__list _anim-items _anim-no-hide">
+                <a href="#" class="exit">
+                    <div></div>
+                    <div></div>
+                </a>
+                <li><a href="#">Главная</a></li>
+                <li><a href="pages/news.html">Новости</a></li>
                 <li><a href="">Статьи</a></li>
                 <li><a href="pages/auth.html">Войти/Регистр.</a></li>
             </ul>
@@ -143,22 +152,7 @@
                         <div class="card__title"><h2>Header</h2></div>
                         <div class="card__text">
                             <p>
-                                Всем привет, пытаюсь уже 10 раз установить
-                                русификатор, но так и не понял как это сделать.
-                                Возможно он сейчас не работает, либо я неправильно его установил.
-                                Делал так: скачал архив, разархивировал, перед этим удалил старую версию,
-                                запустил новую версию, указал путь к папке с игрой(steam версия),
-                                проверил на наличие новых обновлений, загрузил перевод с сервера,
-                                подождал и нажал на установить, галочку с "Всего, кроме диалогов" убрал,
-                                затем запустил лаунчер SWTOR. Но в игре все равно только английский язык.
-                                Я вышел из игры, не стал сразу всё переустанавливать заново , перепроверил
-                                всё еще раз на наличие новых обновлений, русификатор написал, что нету.
-                                Вижу что кнопка "Переустановить" обведена синей обводкой  ну и нажал на нее.
-                                Через несколько секунд выходит командная строка, а за ней открывается
-                                браузер Firefox и начинает переводить автоматически тексты из игры,
-                                но она очень долго длиться. Как быть, никто с такой проблемой не
-                                сталкивался ? Буду очень рад, если подскажите, как это решить.
-                                К сожалению первый раз столкнулся с такой проблемой.
+                                TEST
                             </p>
                         </div>
                     </div>
@@ -366,9 +360,10 @@
             <img src="images/for-index-page/mountains.png" alt="">
         </div>
         <div class="five__bottom">
+            <div class="five__bottom-back"></div>
             <form action="" class="five__form">
                 <div class="form__body">
-                    <div>
+                    <div class="form__body-input">
                         <div>
                             <label for="name">Имя</label>
                             <input type="text" name="name" id="name" placeholder="Введите имя ...">
@@ -378,7 +373,7 @@
                             <input type="email" name="email" id="emails" placeholder="Введите почту ...">
                         </div>
                     </div>
-                    <div>
+                    <div class="form__body-textarea">
                         <textarea name="text" id="text" placeholder="Введите свое сообщение ..."></textarea>
                     </div>
                 </div>
