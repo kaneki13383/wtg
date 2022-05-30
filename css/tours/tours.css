@@ -1,0 +1,295 @@
+@media screen and (min-width: 427px){
+    .tours{
+        width: 90vw;
+        height: 2600px;
+        display: grid;
+        margin: 0 5%;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(14,1fr);
+        grid-gap: 30px;
+    }
+    .tour{
+        border-radius: 20px;
+        display: flex;
+        align-items: flex-end;
+        position: relative;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        transition: all 0.4s ease;
+    }
+    .tour-shadow{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.33);
+        z-index: 1;
+        border-radius: 20px;
+    }
+    .tour > h2{
+        width: 90%;
+        margin-left: 10%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        font-family: raleway_c, sans-serif;
+        font-size: 2rem;
+        color: white;
+        position: absolute;
+        bottom: 2.5%;
+        left: 0;
+        z-index: 2;
+    }
+    #dubai{
+        grid-column: 1/2;
+        grid-row: 1/5;
+        background-image: url("../../images/for-tours/dubai.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        transform: translateX(-50%);
+        opacity: 0;
+    }
+    #dubai._active{
+        transform: translateX(0);
+        opacity: 1;
+    }
+    #moscow{
+        grid-column: 2/4;
+        grid-row: 1/3;
+        background-image: url("../../images/for-tours/moscow.png");
+        transform: translateX(50%);
+        opacity: 0;
+    }
+    #moscow._active{
+        transform: translateX(0);
+        opacity: 1;
+    }
+    #rome{
+        grid-column: 2/4;
+        grid-row: 3/5;
+        background-image: url("../../images/for-tours/rome.png");
+        transform: translateX(50%);
+        opacity: 0;
+    }
+    #rome._active{
+        transform: translateX(0);
+        opacity: 1;
+    }
+    #london{
+        grid-column: 1/4;
+        grid-row: 5/8;
+        background-image: url("../../images/for-tours/london.png");
+        transform: translateX(50%);
+        opacity: 0;
+    }
+    #london._active{
+        transform: translateX(0);
+        opacity: 1;
+    }
+    #paris{
+        grid-column: 1/2;
+        grid-row: 8/12;
+        background-image: url("../../images/for-tours/paris.png");
+        transform: translateX(-50%);
+        opacity: 0;
+    }
+    #paris._active{
+        transform: translateX(0);
+        opacity: 1;
+    }
+    #venice{
+        grid-column: 2/4;
+        grid-row: 8/10;
+        background-image: url("../../images/for-tours/venive.png");
+        transform: translateX(50%);
+        opacity: 0;
+    }
+    #venice._active{
+        transform: translateX(0);
+        opacity: 1;
+    }
+    #kazan{
+        grid-column: 2/4;
+        grid-row: 10/12;
+        background-image: url("../../images/for-tours/kazan.png");
+        transform: translateX(50%);
+        opacity: 0;
+    }
+    #kazan._active{
+        transform: translateX(0);
+        opacity: 1;
+    }
+    #new-york{
+        grid-column: 1/3;
+        grid-row: 12/15;
+        background-image: url("../../images/for-tours/new-youk.png");
+        transform: translateX(-50%);
+        opacity: 0;
+    }
+    #new-york._active{
+        transform: translateX(0);
+        opacity: 1;
+    }
+    #prague{
+        grid-column: 3/4;
+        grid-row: 12/15;
+        background-image: url("../../images/for-tours/prague.png");
+        transform: translateX(50%);
+        opacity: 0;
+    }
+    #prague._active{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@media screen and (max-width: 426px){
+    .tours{
+        width: 90vw;
+        height: 2800px;
+        display: grid;
+        margin: 0 5%;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(17,1fr);
+        grid-gap: 15px;
+    }
+    .tour{
+        border-radius: 20px;
+        display: flex;
+        align-items: flex-end;
+        position: relative;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        transition: all 0.4s ease;
+    }
+    .tour-shadow{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.33);
+        z-index: 1;
+        border-radius: 20px;
+    }
+    .tour > h2{
+        width: 90%;
+        height: 20%;
+        margin-left: 10%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        font-family: raleway_c, sans-serif;
+        font-size: 2rem;
+        color: white;
+        position: absolute;
+        bottom: 2.5%;
+        left: 0;
+        z-index: 2;
+    }
+    #dubai{
+        grid-column: 1/3;
+        grid-row: 1/4;
+        background-image: url("../../images/for-tours/dubai.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        transform: translateX(-50%);
+        opacity: 0;
+    }
+    #dubai._active{
+        transform: translateX(0);
+        opacity: 1;
+    }
+    #moscow{
+        grid-column: 1/3;
+        grid-row: 4/6;
+        background-image: url("../../images/for-tours/moscow.png");
+        transform: translateX(50%);
+        opacity: 0;
+    }
+    #moscow._active{
+        transform: translateX(0);
+        opacity: 1;
+    }
+    #rome{
+        grid-column: 1/3;
+        grid-row: 6/8;
+        background-image: url("../../images/for-tours/rome.png");
+        transform: translateX(50%);
+        opacity: 0;
+    }
+    #rome._active{
+        transform: translateX(0);
+        opacity: 1;
+    }
+    #london{
+        grid-column: 1/3;
+        grid-row: 8/10;
+        background-image: url("../../images/for-tours/london.png");
+        transform: translateX(50%);
+        opacity: 0;
+    }
+    #london._active{
+        transform: translateX(0);
+        opacity: 1;
+    }
+    #paris{
+        grid-column: 1/3;
+        grid-row: 10/12;
+        background-image: url("../../images/for-tours/paris.png");
+        transform: translateX(-50%);
+        opacity: 0;
+    }
+    #paris._active{
+        transform: translateX(0);
+        opacity: 1;
+    }
+    #venice{
+        grid-column: 1/3;
+        grid-row: 12/14;
+        background-image: url("../../images/for-tours/venive.png");
+        transform: translateX(50%);
+        opacity: 0;
+    }
+    #venice._active{
+        transform: translateX(0);
+        opacity: 1;
+    }
+    #kazan{
+        grid-column: 1/3;
+        grid-row: 12/14;
+        background-image: url("../../images/for-tours/kazan.png");
+        transform: translateX(50%);
+        opacity: 0;
+    }
+    #kazan._active{
+        transform: translateX(0);
+        opacity: 1;
+    }
+    #new-york{
+        grid-column: 1/3;
+        grid-row: 14/16;
+        background-image: url("../../images/for-tours/new-youk.png");
+        transform: translateX(-50%);
+        opacity: 0;
+    }
+    #new-york._active{
+        transform: translateX(0);
+        opacity: 1;
+    }
+    #prague{
+        grid-column: 1/3;
+        grid-row: 16/18;
+        background-image: url("../../images/for-tours/prague.png");
+        transform: translateX(50%);
+        opacity: 0;
+    }
+    #prague._active{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}

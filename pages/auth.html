@@ -7,8 +7,31 @@
     <link rel="stylesheet" href="../css/default/fonts.css">
     <link rel="stylesheet" href="../css/default/null.css">
     <link rel="stylesheet" href="../css/auth/auth.css">
+    <link rel="stylesheet" href="../css/auth/auth-header.css">
 </head>
 <body style="overflow: hidden; transition: none; background: black;">
+    <header>
+        <nav>
+            <figure class="header__logo">
+                <img src="" alt="">
+            </figure>
+            <a href="#burger-menu" class="header__list__burger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </a>
+            <ul id="burger-menu" class="header__list _anim-items _anim-no-hide">
+                <a href="#" class="exit">
+                    <div></div>
+                    <div></div>
+                </a>
+                <li><a href="../index.html">Главная</a></li>
+                <li><a href="news.html">Новости</a></li>
+                <li><a href="">Статьи</a></li>
+                <li><a href="auth.html">Войти/Регистр.</a></li>
+            </ul>
+        </nav>
+    </header>
     <div class="for-auth">
         <div class="auth">
             <div class="auth__title">
@@ -22,5 +45,6 @@
             </form>
         </div>
     </div>
+    <script src="../js/anim_on_scroll.js"></script>
 </body>
 </html>
