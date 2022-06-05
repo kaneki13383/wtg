@@ -16,3 +16,14 @@ function openOrCloseFlex(block,main) {
         main.style.height = "10%";
     }
 }
+function openOrCloseFAQ(question){
+    if(question.querySelector('.question-header-btn i').classList.contains('bx-chevron-down')){
+        question.querySelector('.question-header-btn').innerHTML = "<i class='bx bx-x'></i>";
+        question.querySelector('.question-body').classList.add('question-open');
+        question.style.height = '220px';
+    } else {
+        question.querySelector('.question-header-btn').innerHTML = "<i class='bx bx-chevron-down'></i>";
+        question.querySelector('.question-body').classList.remove('question-open');
+        question.style.height = '100px';
+    }
+}

@@ -1,6 +1,7 @@
 .questions{
     width: 100%;
-    height: 1000px;
+    height: 75vh;
+    border: 2px red solid;
 }
 .question-header{
     width: 90%;
@@ -18,7 +19,8 @@
 }
 .q-cards{
     width: 100%;
-    height: 10%;
+    height: 30%;
+    margin: 5% 0;
 }
 .q-head{
     width: 100%;
@@ -34,15 +36,16 @@
     border-radius: 10px;
 }
 .q-body{
-    height: 70%;
+    height: 100%;
     font-family: raleway_c, sans-serif;
     border: 2px whitesmoke solid;
     border-radius: 20px;
     display: none;
+
 }
 .q-body p{
-    margin-top: 2.5%;
     margin-left: 2.5%;
+    margin-top: .5%;
 }
 .q-open{
     display: flex;
