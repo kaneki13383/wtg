@@ -1,57 +1,65 @@
-let container = document.querySelector('.sec__three')
-let slider = document.querySelector('.advice__list');
-let slides = document.querySelectorAll('.advice__item').length;
-let buttons = document.querySelectorAll('#btns');
+window.addEventListener("DOMContentLoaded",()=>{
+    const btnLeft = document.querySelector(".left__btn"),
+        btnRight = document.querySelector(".right__btn"),
+        slides = document.querySelectorAll(".advice__item"),
+        windowSlider = document.querySelector(".advice__window");
 
 
-let currentPosition = 0;
-let currentMargin = 0;
-let slidesPerPage = 0;
-let slidesCount = slides - slidesPerPage;
-let containerWidth = container.offsetWidth;
-window.addEventListener("resize", checkWidth);
+    let widthSlide = slides[0].clientWidth;
+    let widthWindow = windowSlider.clientWidth;
 
-function checkWidth() {
-    containerWidth = container.offsetWidth;
-    setParams(containerWidth);
-}
+    let screenCount = 6;
 
-function setParams(w) {
-    if (w < 551) {
-        slidesPerPage = 1;
-    } else {
-        if (w < 901) {
-            slidesPerPage = 2;
-        } else {
-            if (w < 1101) {
-                slidesPerPage = 3;
-            } else {
-                slidesPerPage = 4;
-            }
+    function resize(){
+        if(document.body.clientWidth < 1281 && document.body.clientWidth > 1026){
+            screenCount = 3;
+        } else if(document.body.clientWidth < 1025 && document.body.clientWidth > 821){
+            screenCount = 4;
+        } else if(document.body.clientWidth < 821){
+            screenCount = 4;
+            widthBetweenSlide = 20;
         }
     }
-    slidesCount = slides - slidesPerPage;
-    if (currentPosition > slidesCount) {
-        currentPosition -= slidesPerPage;
-    }
-    currentMargin = - currentPosition * (135 / slidesPerPage);
-    slider.style.marginLeft = currentMargin + '%';
-}
 
-setParams();
+    console.log("Размер одной карты = " + widthSlide);
+    console.log("Размер окна = " + widthWindow);
 
-function slideRight() {
-    if (currentPosition !== 0) {
-        slider.style.marginLeft = currentMargin + (135 / slidesPerPage) + '%';
-        currentMargin += (135 / slidesPerPage);
-        currentPosition--;
-    }
-}
+    let marginLeft = 0;
+    let widthBetweenSlide = (widthWindow - (widthSlide * 3)) / 2;
+    resize();
+    console.log(widthSlide * (slides.length - 3));
+    console.log("Размер отступа = " + widthBetweenSlide);
 
-function slideLeft() {
-    if (currentPosition !== slidesCount) {
-        slider.style.marginLeft = currentMargin - (135 / slidesPerPage) + '%';
-        currentMargin -= (135 / slidesPerPage);
-        currentPosition++;
-    }
-}
+
+    btnRight.addEventListener('click',()=>{
+        if(marginLeft > -1 * (widthSlide * (slides.length - 3))){
+
+            if(document.body.clientWidth < 821){
+                marginLeft -= widthWindow;
+                marginLeft -= (widthBetweenSlide);
+            } else {
+                marginLeft -= widthWindow / 3;
+                marginLeft -= (widthBetweenSlide / 2) - screenCount;
+            }
+            console.log("Отступ вправо на " + marginLeft);
+            slides[0].style.marginLeft = marginLeft + 'px';
+        }
+    });
+
+
+    btnLeft.addEventListener('click',()=>{
+        if(marginLeft < 0) {
+
+            if(document.body.clientWidth < 821){
+                marginLeft += widthWindow;
+                marginLeft += (widthBetweenSlide);
+            } else {
+                marginLeft += widthWindow / 3;
+                marginLeft += (widthBetweenSlide / 2) - screenCount;
+            }
+
+            console.log("Отступ влево на " + marginLeft);
+            slides[0].style.marginLeft = marginLeft + 'px';
+        }
+    });
+});

@@ -94,6 +94,14 @@
     border: 1px black solid;
     padding: 0.5% 2.5%;
 }
+
+@media screen and (max-width: 1281px) and (min-width: 427px){
+    .ques__cards{
+        height: 40%;
+        width: 20%;
+    }
+}
+
 @media screen and (max-width: 426px) {
     .sec__four{
         width: 100vw;

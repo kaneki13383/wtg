@@ -73,6 +73,9 @@
     font-family: raleway_c, sans-serif;
     font-size: 16px;
 }
+.question-body p > strong{
+    font-family: "Roboto Light", sans-serif;
+}
 .question-open{
     display: block;
 }
