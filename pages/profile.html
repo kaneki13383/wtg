@@ -6,10 +6,12 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Профиль</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="../css/default/null.css">
     <link rel="stylesheet" href="../css/default/fonts.css">
     <link rel="stylesheet" href="../css/profile/profile-header.css">
     <link rel="stylesheet" href="../css/profile/profile-info.css">
+    <link rel="stylesheet" href="../css/profile/profile-form.css">
     <link rel="stylesheet" href="../css/index-page/footer.css">
 </head>
 <body>
@@ -39,7 +41,7 @@
         <div class="info-header">
             <div class="info-name">
                 <figure class="info-img">
-                    <img src="" alt="">
+                    <img src="../images/icons/person.svg" alt="">
                 </figure>
                 <div class="info-text">
                    <p>
@@ -50,10 +52,93 @@
                     <a href="">Выйти</a>
                 </div>
             </div>
-
+            <div class="info-data">
+                <div class="info-login">
+                    <p>Ваш логин:</p><p>Sashawot342</p>
+                </div>
+                <div class="info-password">
+                    <p>Ваш пароль:</p>
+                    <input type="password" name="password" id="password" value="Ваш пароль" readonly>
+                    <div class="info-password-view" onclick="viewPass(this)">
+                        <span class="material-symbols-outlined">
+                            visibility_off
+                        </span>
+                    </div>
+                </div>
+                <div class="info-mail">
+                    <p>Ваша почта:</p><p>sasha@mail.ru</p>
+                </div>
+            </div>
+        </div>
+        <div class="info-requests">
+            <div class="request">
+                <figure class="request-img">
+                    <img src="https://3dnews.ru/assets/external/illustrations/2017/11/27/962092/sw%20battlefront%202%20art.jpg" alt="">
+                </figure>
+                <div class="request-title">
+                    <p><strong>Название тура</strong></p>
+                </div>
+                <div class="request-btn">
+                    <a href="">Отменить тур</a>
+                </div>
+            </div>
+            <div class="request">
+                <figure class="request-img">
+                    <img src="" alt="">
+                </figure>
+                <div class="request-title">
+                    <p><strong>Название тура</strong></p>
+                </div>
+                <div class="request-btn">
+                    <a href="">Отменить тур</a>
+                </div>
+            </div>
+            <div class="request">
+                <figure class="request-img">
+                    <img src="" alt="">
+                </figure>
+                <div class="request-title">
+                    <p><strong>Название тура</strong></p>
+                </div>
+                <div class="request-btn">
+                    <a href="">Отменить тур</a>
+                </div>
+            </div>
         </div>
     </section>
-
+    <section class="sec__five">
+        <div class="five__top">
+            <h1>Форма обратной связи</h1>
+            <img src="images/for-index-page/mountains.png" alt="">
+        </div>
+        <div class="five__bottom">
+            <div class="five__bottom-back"></div>
+            <form action="" class="five__form">
+                <div class="form__body">
+                    <div class="form__body-input">
+                        <div>
+                            <label for="name">Имя</label>
+                            <input type="text" name="name" id="name" placeholder="Введите имя ...">
+                        </div>
+                        <div>
+                            <label for="emails">E-mail</label>
+                            <input type="email" name="email" id="emails" placeholder="Введите почту ...">
+                        </div>
+                    </div>
+                    <div class="form__body-textarea">
+                        <textarea name="text" id="text" placeholder="Введите свое сообщение ..."></textarea>
+                    </div>
+                </div>
+                <div class="form__footer">
+                    <button type="submit">Отправить</button>
+                    <p>
+                        Мы не передаем Ваши данные третьим лицамине используем для нежелательных рассылок.
+                        Нажимая на кнопку, Вы даете согласие на обработку персональных данных
+                    </p>
+                </div>
+            </form>
+        </div>
+    </section>
     <footer>
         <div class="footer-one">
             <h2>WTG</h2>
@@ -97,5 +182,6 @@
         </div>
     </footer>
     <script src="../js/anim_on_scroll.js"></script>
+    <script src="../js/view-password.js"></script>
 </body>
 </html>

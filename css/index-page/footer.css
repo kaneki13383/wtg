@@ -1,6 +1,5 @@
 @media screen and (min-width: 1600px){
     footer{
-        margin-top: 5%;
         width: 100%;
         height: 400px;
         background-color: #282828;
@@ -112,7 +111,6 @@
 }
 @media screen and (min-width: 1366px) and (max-width: 1599px){
     footer{
-        margin-top: 5%;
         width: 100%;
         height: 400px;
         background-color: #282828;
@@ -224,7 +222,6 @@
 }
 @media screen and (min-width: 651px) and (max-width: 1365px){
     footer{
-        margin-top: 5%;
         width: 100%;
         height: 450px;
         background-color: #282828;
