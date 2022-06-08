@@ -33,7 +33,7 @@ session_start();
                     <div></div>
                     <div></div>
                 </a>
-                <li><a href="#">Главная</a></li>
+                <li><a href="../index.php">Главная</a></li>
                 <li><a href="pages/news.html">Новости</a></li>
                 <li><a href="">Статьи</a></li>
                 <li><a href="pages/profile.php"><?=$_SESSION['user']['login']?></a></li>

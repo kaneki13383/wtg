@@ -11,13 +11,13 @@ function plusPrice(str){
         priceNotAdult += Number(price);
         priceFull += priceNotAdult;
         fullPrice();
-        document.querySelector(`.${str} .count`).innerHTML = countNotAdult;
+        document.querySelector(`.${str} .count`).setAttribute('value',`${countNotAdult}`);
         document.querySelector(`.${str} > .lines-final-price`).innerHTML = priceNotAdult + ' ₽';
     } else if(str === "line-adult"){
         countAdult++;
         priceAdult += Number(price);
         fullPrice();
-        document.querySelector(`.${str} .count`).innerHTML = countAdult;
+        document.querySelector(`.${str} .count`).setAttribute('value',`${countAdult}`);
         document.querySelector(`.${str} > .lines-final-price`).innerHTML = priceAdult + ' ₽';
 
     }
@@ -31,7 +31,7 @@ function minusPrice(str){
             priceNotAdult -= Number(price);
         }
         fullPrice();
-        document.querySelector(`.${str} .count`).innerHTML = countNotAdult;
+        document.querySelector(`.${str} .count`).setAttribute('value',`${countNotAdult}`);
         document.querySelector(`.${str} > .lines-final-price`).innerHTML = priceNotAdult + ' ₽';
     } else if(str === "line-adult"){
         if(countAdult !== 0){
@@ -39,11 +39,11 @@ function minusPrice(str){
             priceAdult -= Number(price);
         }
         fullPrice();
-        document.querySelector(`.${str} .count`).innerHTML = countAdult;
+        document.querySelector(`.${str} .count`).setAttribute('value',`${countAdult}`);
         document.querySelector(`.${str} > .lines-final-price`).innerHTML = priceAdult + ' ₽';
     }
 }
 function fullPrice(){
     priceFull = priceAdult + priceNotAdult;
-    document.querySelector(".form-itog > h3").innerHTML = priceFull + ' ₽';
+    document.querySelector(".form-itog input").setAttribute('value',`${priceFull}`);
 }

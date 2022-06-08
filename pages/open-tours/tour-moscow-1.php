@@ -1,3 +1,9 @@
+<?php
+session_start();
+if(!$_SESSION['user']){
+    
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -34,7 +40,13 @@
         <li><a href="../../index.html">Главная</a></li>
         <li><a href="../news.html">Новости</a></li>
         <li><a href="">Статьи</a></li>
-        <li><a href="../auth.html">Войти</a></li>
+        <?
+                    if($_SESSION['user']){
+                        echo "<li><a href='../profile.php'>{$_SESSION['user']['login']}</a></li>";
+                    }else{
+                        echo '<li><a href="pages/auth.html">Войти</a></li>';
+                    }
+                ?>
       </ul>
     </nav>
   </header>
@@ -731,25 +743,25 @@
     <div class="form-block-title">
       <h3>Забронировать экскурсию</h3>
     </div>
-    <form action="" class="form-main">
+    <form action="../../functions/excursion.php" method="POST" class="form-main">
       <p><strong>Тип экскурсии:</strong> Групповая сборная</p>
       <div class="form-day">
         <div class="day">
-          <input type="radio" name="radio-day" id=radio-day-one>
+          <input type="radio" name="radio_day" value="1 июня" id="radio-day-one">
           <label for="radio-day-one">
             <p>Завтра</p>
             <strong>1 июня</strong>
           </label>
         </div>
         <div class="day">
-          <input type="radio" name="radio-day" id="radio-day-two">
+          <input type="radio" name="radio_day" value="3 июня" id="radio-day-two">
           <label for="radio-day-two">
             <p>Пятница</p>
             <strong>3 июня</strong>
           </label>
         </div>
         <div class="day">
-          <input type="radio" name="radio-day" id="radio-day-three">
+          <input type="radio" name="radio_day" value="6 июня" id="radio-day-three">
           <label for="radio-day-three">
             <p>Понедельник</p>
             <strong>6 июня</strong>
@@ -758,13 +770,13 @@
       </div>
       <div class="form-time">
         <div class="time">
-          <input type="radio" name="radio-time" id=time-one>
+          <input type="radio" name="radio_time" value="9:00" id="time-one">
           <label for="time-one">
             <p>9:00</p>
           </label>
         </div>
         <div class="time">
-          <input type="radio" name="radio-time" id="time-two">
+          <input type="radio" name="radio_time" value="13:00" id="time-two">
           <label for="time-two">
             <p>13:00</p>
           </label>
@@ -778,7 +790,7 @@
           <div class="lines-price">1600 ₽</div>
           <div class="lines-select">
             <button type="button" class="minus" onclick="minusPrice('line-adult')">-</button>
-            <div class="count">0</div>
+            <input class="count" type="text" name="default_bilet"  value="0">           
             <button type="button" class="plus" onclick="plusPrice('line-adult')">+</button>
           </div>
           <div class="lines-final-price">0 ₽</div>
@@ -790,27 +802,27 @@
           <div class="lines-price">600 ₽</div>
           <div class="lines-select">
             <button type="button" class="minus" onclick="minusPrice('line-not-adult')">-</button>
-            <div class="count">0</div>
+            <input class="count" type="text" name="preferential_bilet"  value="0">
             <button type="button" class="plus" onclick="plusPrice('line-not-adult')">+</button>
           </div>
           <div class="lines-final-price">0 ₽</div>
         </div>
       </div>
       <div class="form-itog">
-        <p>Итого:</p><h3>0 ₽</h3>
+        <p>Итого:</p><h3><input type="text" name="summ" value="0"> ₽</h3>
       </div>
       <div class="form-name">
         <label for="fullName">
           Имя и Фамилия
-          <input type="text" required name="fullName" id="fullName" placeholder="Ваша имя и фамилия ...">
+          <input type="text"  name="full_name" id="fullName" placeholder="Ваша имя и фамилия ...">
         </label>
         <label for="email">
           E-mail
-          <input type="email" required name="emai" id="email" placeholder="Ваша почта ...">
+          <input type="email"  name="email" id="email" placeholder="Ваша почта ...">
         </label>
         <label for="tel">
           Номер телефона
-          <input type="tel" required name="tel" id="tel" placeholder="*-***-***-**-**">
+          <input type="tel"  name="tel" id="tel" placeholder="*-***-***-**-**">
         </label>
         <div class="form-btn-block">
           <button type="submit">
@@ -819,7 +831,7 @@
         </div>
         <div class="form-check-block">
           <label for="notification">
-            <input type="checkbox" required name="notification" id="notification">
+            <input type="checkbox"  name="notification" id="notification">
             <p>После оплаты вы получите квитанцию и уведомление о бронировании.  </p>
           </label><br>
           <p>

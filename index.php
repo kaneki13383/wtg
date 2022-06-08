@@ -1,3 +1,9 @@
+<?php
+session_start();
+if(!$_SESSION['user']){
+    
+}
+?>
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -35,7 +41,13 @@
                 <li><a href="#">Главная</a></li>
                 <li><a href="pages/news.html">Новости</a></li>
                 <li><a href="">Статьи</a></li>
-                <li><a href="pages/auth.html">Войти</a></li>
+                <?
+                    if($_SESSION['user']){
+                        echo "<li><a href='pages/profile.php'>{$_SESSION['user']['login']}</a></li>";
+                    }else{
+                        echo '<li><a href="pages/auth.html">Войти</a></li>';
+                    }
+                ?>
             </ul>
         </nav>
         <div class="header__body">
@@ -62,9 +74,13 @@
                     путешествий на свой почтовый ящик!
                 </p>
             </div>
-            <form action="" class="subscribe__form">
+            <form action="./functions/subscribe.php" method="POST" class="subscribe__form">
                 <label for="email">
-                    <input type="email" name="email" id="email" placeholder="Введите почту" required>
+                    <input type="email" name="email" id="email" placeholder="Введите почту" value="<?
+                        if($_SESSION['user']){
+                            echo $_SESSION['user']['email'];
+                        }
+                    ?>" required>
                 </label>
                 <div>
                     <p>
@@ -410,7 +426,7 @@
         </div>
         <div class="five__bottom">
             <div class="five__bottom-back"></div>
-            <form action="" class="five__form">
+            <form action="./functions/feedback.php" method="POST" class="five__form">
                 <div class="form__body">
                     <div class="form__body-input">
                         <div>
