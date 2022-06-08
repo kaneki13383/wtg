@@ -18,9 +18,10 @@
                 "full_name" => $user['full_name'],
                 "login" => $user['login'],
                 "email" => $user['email'],
+                "password" => $user['password'],
                 "role" => $user['role']
             ];
-            header("Location: ../pages/admin.php");
+            header("Location: ../pages/admin/admin.php");
             // $_SESSION['error-login'] = 0;
         }
         else{
@@ -29,6 +30,7 @@
                 "full_name" => $user['full_name'],
                 "login" => $user['login'],
                 "email" => $user['email'],
+                "password" => $user['password'],
                 "role" => $user['role']
             ];
             header("Location: ../pages/profile.php");
