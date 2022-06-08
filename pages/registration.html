@@ -37,12 +37,12 @@
             <div class="registration__title">
                 <h1>Регистрация</h1>
             </div>
-            <form action="" class="registration__body">
-                <input required type="text" name="fullName" id="fullName" placeholder="Введите ФИО">
+            <form action="../functions/reg.php" method="POST" class="registration__body">
+                <input required type="text" name="full_name" id="fullName" placeholder="Введите ФИО">
                 <input required type="email" name="email" id="email" placeholder="Введите почту">
                 <input required type="text" name="login" id="login" placeholder="Введите логин">
-                <input required type="password" name="pass-one" id="pass-one" placeholder="Введите пароль">
-                <input required type="password" name="pass-two" id="pass-two" placeholder="Введите пароль ещё раз">
+                <input required type="password" name="password" id="pass-one" placeholder="Введите пароль">
+                <input required type="password" name="password_confirm" id="pass-two" placeholder="Введите пароль ещё раз">
                 <button type="submit">Зарегистрироваться</button>
                 <div>
                     <div>
