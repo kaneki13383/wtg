@@ -389,6 +389,7 @@
     .city__body{
         width: 100%;
         height: 80%;
+        text-align: center;
     }
     .city__img img{
         min-width: 100%;
@@ -514,6 +515,12 @@
     .research-btn{
         padding: 2.5% 5%;
         font-size: 24px;
+    }
+}
+@media screen and (max-width: 769px) and (min-width: 767px){
+    .research__body{
+        width: 95%;
+        height: 45%;
     }
 }
 @media screen and (max-width: 450px){

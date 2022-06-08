@@ -101,7 +101,27 @@
         width: 20%;
     }
 }
-
+@media screen and (max-width: 821px) and (min-width: 819px){
+    .sec__four{
+        height: 60vh;
+    }
+    .ques__cards{
+        height: 35%;
+        font-size: 12px;
+    }
+    .ques__footer a{
+        padding: 1% 2.5%;
+    }
+}
+@media screen and (max-width: 769px) and (min-width: 767px){
+    .sec__four{
+        height: 60vh;
+    }
+    .ques__cards{
+        height: 40%;
+        font-size: 12px;
+    }
+}
 @media screen and (max-width: 426px) {
     .sec__four{
         width: 100vw;

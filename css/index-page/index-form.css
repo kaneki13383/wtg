@@ -173,6 +173,17 @@
         color: white;
     }
 }
+@media screen and (max-width: 821px) and (min-width: 767px){
+    .five__top img{
+        position: absolute;
+        right: 0;
+        bottom: -40%;
+        width: 90%;
+        height: 100%;
+        object-fit: contain;
+        z-index: 1;
+    }
+}
 @media screen and (max-width: 426px) {
     .sec__five{
         width: 100%;

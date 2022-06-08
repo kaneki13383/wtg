@@ -1,6 +1,5 @@
-body{
-    width: 100%;
-    overflow-x: hidden;
+.exit{
+    display: none;
 }
 @media screen and (min-width: 1600px){
     header{
@@ -9,9 +8,6 @@ body{
         display: flex;
         flex-direction: column;
         align-items: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
         position: relative;
         background-attachment: fixed;
     }
@@ -43,18 +39,18 @@ body{
         justify-content: space-around;
         list-style: none;
         transition: all 0.4s ease-in-out;
-        transform: translateX(-100%);
-        opacity: 0;
+        transform: translateX(100%);
+        appearance: none;
     }
     .header__list._active{
-        transform: translateX(0);
-        opacity: 1;
+        transform: translateX(-10%);
+        appearance: auto;
     }
     .header__list a{
         text-decoration: none;
         color: black;
         font-family: raleway_c, sans-serif;
-
+        font-size: calc(14px + 4 * (100vw / 1280));
         background-image: linear-gradient(
                 transparent 0%,
                 transparent 90%,
@@ -72,7 +68,6 @@ body{
         background-size: 100% 100%;
         background-position-x: left;
     }
-
 }
 @media screen and (min-width: 1366px) and (max-width: 1599px){
     header{
@@ -81,11 +76,7 @@ body{
         display: flex;
         flex-direction: column;
         align-items: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
         position: relative;
-        background-attachment: fixed;
     }
     header nav{
         width: 100vw;
@@ -115,18 +106,18 @@ body{
         justify-content: space-around;
         list-style: none;
         transition: all 0.4s ease-in-out;
-        transform: translateX(-100%);
-        opacity: 0;
+        transform: translateX(100%);
+        appearance: none;
     }
     .header__list._active{
-        transform: translateX(0);
-        opacity: 1;
+        transform: translateX(-10%);
+        appearance: auto;
     }
     .header__list a{
         text-decoration: none;
         color: black;
         font-family: raleway_c, sans-serif;
-
+        font-size: calc(14px + 4 * (100vw / 1280));
         background-image: linear-gradient(
                 transparent 0%,
                 transparent 90%,
@@ -144,98 +135,30 @@ body{
         background-size: 100% 100%;
         background-position-x: left;
     }
-
 }
-@media screen and (min-width: 427px) and (max-width: 1365px){
+@media screen and (max-width: 1365px){
     header{
-        width: 100vw;
-        height: 10vh;
+        width: 100%;
+        height:10vh;
         display: flex;
+        justify-content: space-between;
+        background-color: white;
         flex-direction: column;
-        align-items: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
         position: relative;
-        background-attachment: fixed;
-    }
-    header nav{
-        width: 100vw;
-        height: 100%;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        position: relative;
-        z-index: 4;
-    }
-    .header__logo{
-        width: 30vw;
-        height: 100%;
-        position: relative;
-        z-index: 4;
-    }
-    .header__logo img{
-        width: 100%;
-        height: 100%;
-        object-fit: fill;
-    }
-    .header__list{
-        width: 30vw;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        list-style: none;
-        transition: all 0.4s ease-in-out;
-        transform: translateX(-100%);
-        opacity: 0;
-    }
-    .header__list._active{
-        transform: translateX(0);
-        opacity: 1;
-    }
-    .header__list a{
-        text-decoration: none;
-        color: black;
-        font-family: raleway_c, sans-serif;
-
-        background-image: linear-gradient(
-                transparent 0%,
-                transparent 90%,
-                black 90%,
-                black 100%
-        );
-        background-repeat: no-repeat;
-
-        background-size: 0 100%;
-        background-position-x: right;
-
-        transition:  all 300ms;
-    }
-    .header__list a:hover{
-        background-size: 100% 100%;
-        background-position-x: left;
-    }
-}
-@media screen and (max-width: 426px){
-    header{
-        width: 100%;
-        height: 7.5%;
-        display: flex;justify-content: space-between;
-        position: fixed;
-        top: 0;
-        left: 0;
-        background-color: black;
-        z-index: 10;
     }
     /* == ШАПКА == */
     /* =========== */
     header nav{
         width: 100%;
-        height: 100%;
+        height: 10%;
+        background-color: rgba(0, 0, 0, 0.75);
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 10;
     }
     .header__logo{
         width: 30%;
@@ -246,8 +169,8 @@ body{
         position: absolute;
         top: 50%;
         right: 2.5%;
-        width: 40px;
-        height: 40px;
+        width: 50px;
+        height: 50px;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -263,16 +186,17 @@ body{
         position: fixed;
         top: 0;
         width: 100%;
-        height: 200px;
+        height: 300px;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         background-color: black;
         align-items: center;
         transition: all 0.4s ease;
+        z-index: 10;
     }
     #burger-menu:not(:target) {
-        right: -100%;
+        right: -110%;
     }
     #burger-menu:target {
         right: 0;
@@ -281,6 +205,7 @@ body{
         text-decoration: none;
         color: white;
         font-family: raleway_c, sans-serif;
+        font-size: 1.25rem;
     }
     .exit{
         position: absolute;
@@ -308,5 +233,4 @@ body{
     .exit div:nth-child(2){
         transform: rotate(-45deg);
     }
-    /* =========== */
 }
